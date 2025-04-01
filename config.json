@@ -1,0 +1,9 @@
+{
+  "repo_path": "/Users/sab/PycharmProjects/pycopilot",
+  "excluded_dirs": [ ".git", "__pycache__", "tests", "docs",
+    ".venv", ".idea", "examples", "data"],
+  "excluded_files": ["README.md", "LICENSE", ".gitignore",".json", ".png", ".jpg",".yaml", ".txt", ".DS_Store"],
+  "output_path": "pythoncode_output.txt",
+  "agent_name": "PythonCode",
+  "agent_prompt": "Please provide precise guidance on how to refactor "
+}

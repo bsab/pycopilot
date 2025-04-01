@@ -1,0 +1,10 @@
+langchain
+langchain-community
+transformers
+torch
+accelerate>=0.26.0
+#end chunking
+pyyaml
+tokencost
+anthropic
+openai==1.66.3

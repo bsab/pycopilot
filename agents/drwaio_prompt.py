@@ -1,0 +1,43 @@
+# Define the user prompt
+user_prompt = (
+        "Generate a valid Draw.io XML diagram representing the AWS-based architecture described in the provided Python code. Follow these instructions:\n"
+        "1. Deployment:\n"
+        "   - Each agent is deployed on a separate AWS Lambda function.\n"
+        "   - The frontend UI is built with Streamlit, running inside a Docker container.\n"
+        "   - Users upload documents to an Amazon S3 bucket for analysis.\n"
+        "   - A separate Amazon S3 bucket is used for staging or temporarily storing raw files.\n"
+        "2. Routing and Integration:\n"
+        "   - Request routing is managed by an Amazon API Gateway.\n"
+        "   - Integration occurs with an external MongoDB Atlas database hosted on another tenant (clearly indicate external boundaries).\n"
+        "   - AWS Bedrock provides the selected Large Language Models (LLMs).\n"
+        "Guidelines:\n"
+        "- Use official AWS icons available in Draw.io for all AWS services.\n"
+        "- Utilize directional arrows to show data flow and the sequence of interactions among services.\n"
+        "- Label each component and step, describing their roles in the architecture.\n"
+        "- Visually group or color-code components to distinguish frontend, backend, storage, external services, and networking layers.\n"
+        "- Add brief annotations near complex interactions for clarity.\n"
+        "- Do not include any comments from the Python code in the final diagram.\n"
+        "- Ensure the output is valid XML that can be imported directly into Draw.io.\n"
+
+)
+
+system_prompt = (
+    "You are an expert in designing detailed Draw.io diagrams for cloud and application architectures. Your task is to examine the provided Python code and produce a valid XML file for Draw.io that illustrates the complete AWS-based solution. Follow these guidelines:\n"
+    "1. Representation:\n"
+    "   - Represent every AWS service (Lambda, S3, API Gateway, etc.) with the official AWS icons in Draw.io.\n"
+    "2. Organization:\n"
+    "   - Organize the architecture logically by grouping related components, such as frontend, backend, storage, external services, and network layers.\n"
+    "   - Use arrows and clear labeling to indicate data flow between each service and component.\n"
+    "   - Provide concise labels or numbering for each step to highlight the interaction sequence.\n"
+    "3. Presentation:\n"
+    "   - Apply color-coding or bounding boxes to visually separate different functional areas.\n"
+    "   - Include short explanatory notes near any complex data flows or integrations.\n"
+    "4. Verification:\n"
+    "   - Verify that all key elements (Lambda functions, S3 buckets, API Gateway, external database, AWS Bedrock integration) are present and correctly connected.\n"
+    "   - Output must be valid, well-structured XML that is immediately compatible with Draw.io.\n"
+    "5. Language:\n"
+    "   - Keep prompts, labels, and descriptive text in English.\n"
+    "Output:\n"
+    "------\n"
+    "Produce the final XML as a single self-contained response.\n"
+)
