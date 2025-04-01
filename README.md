@@ -2,6 +2,8 @@
 
 PyCopilot is a Python-based tool that aggregates the content of a repository and uses specialized agents to analyze Python code, optimize it, and even generate Draw.io diagrams representing architecture. It leverages state-of-the-art large language models (LLMs) and provides detailed recommendations to improve code quality, style, and performance.
 
+![logo](logo-pycopilot.png)
+
 ## Overview
 
 - **Repository Aggregator:** Collects and aggregates content from the project files. Excludes specified directories and files to avoid redundant data (e.g., version control files, images, or unwanted extensions).
