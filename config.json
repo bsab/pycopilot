@@ -3,7 +3,7 @@
   "excluded_dirs": [ ".git", "__pycache__", "tests", "docs",
     ".venv", ".idea", "examples", "data"],
   "excluded_files": ["README.md", "LICENSE", ".gitignore",".json", ".png", ".jpg",".yaml", ".txt", ".DS_Store"],
-  "output_path": "pythoncode_output.txt",
+  "output_path": "output.txt",
   "agent_name": "PythonCode",
-  "agent_prompt": "Please provide precise guidance on how to refactor "
+  "agent_prompt": "Optimize my Python project for better performance and maintainability. It's currently slow and uses too much memory. Recommend profiling tools, refactoring strategies, and efficient libraries "
 }
